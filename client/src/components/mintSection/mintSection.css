@@ -1,0 +1,66 @@
+.mint-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cookie-image {
+  width: 25%;
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .cookie-image {
+    animation: image-spin infinite 20s linear;
+  }
+}
+
+@keyframes image-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.score-text {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.mint-section-button {
+  margin-top: 10%;
+  border: none;
+  padding: 1% 4%;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  background-color: #ffb25c;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.resultMessage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.resultMessage-text {
+  margin-top: 10%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.metadataUrl-text {
+  margin-top: 2%;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.metadataUrl-text:hover {
+  font-weight: bold;
+}
